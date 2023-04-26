@@ -1,0 +1,25 @@
+.modal-container {
+  position: absolute;
+  background-color: rgba(19, 57, 92, 0.5);
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+  padding-bottom: 100px;
+  overflow-x: scroll;
+}
+
+.modal-container dialog {
+  top: 70px;
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .modal-container .dialog {
+    width: 400px;
+  }
+}
